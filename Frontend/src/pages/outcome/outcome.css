@@ -1,0 +1,196 @@
+  .app {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(207, 205, 217, 0.7),rgba(221, 219, 237, 0.7)), url('https://media.licdn.com/dms/image/v2/D4D1BAQFgmrYvlG-aaQ/company-background_10000/company-background_10000/0/1655321602795/kmutt_cover?e=2147483647&v=beta&t=-oBC43DFebWSfi26PzBXVd2M-mrynn-vsAZREoFTFBw');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Josefin Sans", sans-serif;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .content {
+    margin: 10px auto;
+    padding: 20px;
+    width: 100%; /* Allow it to stretch */
+    max-width: 800px; /* Increased max width for more space */
+    min-width: 500px; /* Ensures it doesn't get too small */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    transition: all 0.3s ease-in-out; /* Smooth expansion */
+  }
+  
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .so-box {
+    background-color: #e9ecef;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .edit-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .edit-btn:hover {
+    background-color: #5a6268;
+  }
+  
+  .data-display {
+    margin-bottom: 20px;
+  }
+  
+  .data-row {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+    padding: 8px 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+  }
+  
+  .form-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input-box {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 5px;
+    flex: 1;
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .weight-display {
+    background-color: #adb5bd;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-align: center;
+    min-width: 50px;
+  }
+  
+  .save-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .save-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.03);
+  }
+  
+  .survey-section {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .survey-label {
+    background-color: #adb5bd;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .survey-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .survey-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    /* border-bottom: 1px solid #ddd; */
+  }
+  
+  .header-item, .row-item {
+    text-align: center;
+    min-width: 100px;
+  }
+  
+  .weight-input {
+    flex: 1; /* Allows input to scale */
+    min-width: 80px;
+    max-width: 100px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+  .content {
+    width: 90%;
+    max-width: none; /* Allows expansion on smaller screens */
+  }
+
+  .survey-row, .survey-header {
+    flex-wrap: wrap; /* Stack if space is tight */
+  }
+
+  .header-item, .row-item {
+    flex-basis: 33%; /* Make each column take 1/3 of the space */
+  }
+}
+
+  .save-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
